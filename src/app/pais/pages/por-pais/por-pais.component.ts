@@ -31,5 +31,9 @@ export class PorPaisComponent{
     //return this.termino;
     
   }
+
+  sugerencias(termino: string) {
+    this.hayError = false;
+  }
  
 }
