@@ -14,16 +14,16 @@
       <a class="nav-link animate__animated animate__fadeIn"
         [routerLink]="[ '/pais', paisSugerido.alpha2Code ]">{{paisSugerido.name}}</a>
     </li>
-    <li class="list-group-item list-group-item-action">
-      <a (click)="buscarSugerido(termino)" class="nav-link animate__animated animate__fadeIn">
-        Buscar "{{termino}}"
+    <li class="list-group-item list-group-item-action bg-secondary">
+      <a (click)="buscarSugerido(termino)" class="nav-link animate__animated animate__fadeIn text-white">
+        Buscar todo con "{{termino}}"
       </a>
     </li>
   </ul>
   <hr>
 </div>
 
-<div *ngIf="hayError" class="alert alert-danger">
+<div *ngIf="hayError" class="alert alert-danger animate__animated animate__shakeX">
   No se encontró nada con el término {{termino}}
 </div>
 
